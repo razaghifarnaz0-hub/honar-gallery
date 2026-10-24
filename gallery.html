@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>گالری هنر من</title>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">گالری هنر من</div>
+
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#paintings">تابلوها</a>
+    <a href="#sculptures">مجسمه‌ها</a>
+    <a href="#about">درباره ما</a>
+  </nav>
+
+  <div class="cart-box">
+    <button id="cartButton">
+      🛒 سبد خرید <span id="cartCount">0</span>
+    </button>
+
+    <div id="cartPanel" class="cart-panel">
+      <h2>سبد خرید شما</h2>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-total">
+        جمع کل:
+        <strong id="cartTotal">0 تومان</strong>
+      </div>
+
+      <div class="order-form">
+        <h3>ثبت سفارش</h3>
+
+        <input
+          type="text"
+          id="customerName"
+          placeholder="نام و نام خانوادگی"
+        >
+
+        <input
+          type="tel"
+          id="customerPhone"
+          placeholder="شماره تماس"
+        >
+
+        <textarea
+          id="customerAddress"
+          placeholder="آدرس کامل"
+        ></textarea>
+
+        <button id="submitOrder">ثبت سفارش</button>
+      </div>
+
+      <button id="closeCart">بستن</button>
+    </div>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <h1>گالری هنر من</h1>
+  <h2>هنر، زیبایی خانه شماست</h2>
+  <p>مجموعه‌ای از تابلوها و مجسمه‌های هنری</p>
+  <a href="#paintings">
+    <button>مشاهده محصولات</button>
+  </a>
+</section>
+
+<section id="paintings">
+  <h2 class="section-title">تابلوها</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1577083288073-40892c0860a4"
+        alt="تابلو هنری"
+      >
+      <h3>تابلو هنری شماره ۱</h3>
+      <p>۵,۰۰۰,۰۰۰ تومان</p>
+      <button class="add-to-cart" data-name="تابلو هنری شماره ۱" data-price="5000000">
+        افزودن به سبد
+      </button>
+    </div>
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5"
+        alt="تابلو هنری"
+      >
+      <h3>تابلو هنری شماره ۲</h3>
+      <p>۶,۵۰۰,۰۰۰ تومان</p>
+      <button class="add-to-cart" data-name="تابلو هنری شماره ۲" data-price="6500000">
+        افزودن به سبد
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<section id="sculptures">
+  <h2 class="section-title">مجسمه‌ها</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1561214115-f2f134cc4912"
+        alt="مجسمه هنری"
+      >
+      <h3>مجسمه هنری شماره ۱</h3>
+      <p>۸,۰۰۰,۰۰۰ تومان</p>
+      <button class="add-to-cart" data-name="مجسمه هنری شماره ۱" data-price="8000000">
+        افزودن به سبد
+      </button>
+    </div>
+
+    <div class="product">
+      <img
+        src="https://images.unsplash.com/photo-1549490349-8643362247b5"
+        alt="مجسمه هنری"
+      >
+      <h3>مجسمه هنری شماره ۲</h3>
+      <p>۹,۵۰۰,۰۰۰ تومان</p>
+      <button class="add-to-cart" data-name="مجسمه هنری شماره ۲" data-price="9500000">
+        افزودن به سبد
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<footer id="about">
+  <p>© گالری هنر من</p>
+  <p>برای سفارش و اطلاعات بیشتر با ما تماس بگیرید.</p>
+</footer>
+
+</body>
+</html>
